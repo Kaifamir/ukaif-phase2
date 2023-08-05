@@ -1,0 +1,31 @@
+@media (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto auto 100px;
+        width: 100%;
+    }
+
+    header,aside,main,footer{
+        grid-column-start: span 1;
+    }
+
+    nav{
+        position: static;
+    }
+
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        height: 20vh;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+    }
+
+
+}
